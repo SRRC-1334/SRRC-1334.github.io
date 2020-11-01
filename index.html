@@ -20,7 +20,6 @@
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-a11y="true"></script>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <STYLE type="text/css">
       p.mypar {font-style: italic; color: #AA00FF}
       </STYLE>
@@ -505,10 +504,7 @@
 						<footer>Heinrich Heine</footer>
 					 </blockquote>
                   </div>
-                  <form id="contact-form" method="post" action="contact_form/contact_form.php">
-
-                        <div class="messages"></div>
-
+                  <form id="contact-form" method="post" action="https://formspree.io/f/mqkgpdkw">
                         <div class="controls">
                           <div class="form-group form-group-with-icon">
                             <label>Name</label>
@@ -519,7 +515,7 @@
 
                           <div class="form-group form-group-with-icon">
 							<label>Email Address</label>
-                            <input id="form_email" type="email" name="email" class="form-control" placeholder required="required" data-error="Valid email is required.">
+                            <input id="form_email" type="email" name="_replyto" class="form-control" placeholder required="required" data-error="Valid email is required.">
                             <div class="form-control-border"></div>
                             <div class="help-block with-errors"></div>
                           </div>
@@ -530,10 +526,7 @@
                             <div class="form-control-border"></div>
                             <div class="help-block with-errors"></div>
                           </div>
-
-                          <div class="g-recaptcha" data-sitekey="6Ldt5t0ZAAAAADyaorlOhbo9X574BvCRWFDYoJAW"></div>
-
-                          <input type="submit" class="button btn-send" value="Send message">
+                          <input type="submit" class="button btn-send" value="Send">
                         </div>
                       </form>
                 </div>
