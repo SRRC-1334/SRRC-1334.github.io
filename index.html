@@ -504,31 +504,21 @@
 						<footer>Heinrich Heine</footer>
 					 </blockquote>
                   </div>
-                  <form id="contact-form" method="post" action="https://formspree.io/f/mqkgpdkw">
-                        <div class="controls">
-                          <div class="form-group form-group-with-icon">
-                            <label>Name</label>
-                            <input id="form_name" type="text" name="name" class="form-control" placeholder required="required" data-error="Name is required.">
-                            <div class="form-control-border"></div>
-                            <div class="help-block with-errors"></div>
-                          </div>
-
-                          <div class="form-group form-group-with-icon">
-							<label>Email Address</label>
-                            <input id="form_email" type="email" name="_replyto" class="form-control" placeholder required="required" data-error="Valid email is required.">
-                            <div class="form-control-border"></div>
-                            <div class="help-block with-errors"></div>
-                          </div>
-
-                          <div class="form-group form-group-with-icon">
-                            <label>Message for Me</label>
-                            <textarea id="form_message" name="message" class="form-control" placeholder rows="4" required="required" data-error="Please, leave me a message."></textarea>
-                            <div class="form-control-border"></div>
-                            <div class="help-block with-errors"></div>
-                          </div>
-                          <input type="submit" class="button btn-send" value="Send">
-                        </div>
-                      </form>
+                  <form action="https://formspree.io/f/mqkgpdkw"   method="POST">
+				  <div class="controls">
+					<div class="form-group">
+						<label>Your email:</label><input id="form_email" type="text" name="_replyto" class="form-control" placeholder required="required">
+					</div>
+					<div class="form-group">
+						<label>Your message:</label><textarea id="form_message" class="form-control" placeholder rows="4" name="message"></textarea>
+					</div>
+						<button type="submit">Send</button>
+				  </div>
+				  </form>
+				  <hr>
+				  <div class="social-links"  align="Center">
+                        <a href="https://www.linkedin.com/in/srajaramachandran"><i class="fab fa-linkedin-in fa-3x"></i></a>
+                        <a href="https://github.com/SRRC-1334"><i class="fab fa-github fa-3x"></i></a></div>
                 </div>
               </div>
             </section>
